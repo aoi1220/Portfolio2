@@ -1,0 +1,519 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat, Noto Sans JP', sans-serif;
+    color: #333;
+}
+
+img,svg {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    opacity: 0.7;
+    transition: .3s;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+.section-wrapper {
+    padding: 60px 0;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-wrapper {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.link-btn {
+    color: #fff;
+    background-color: #000;
+    width: 160px;
+    line-height: 36px;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.gray-bg {
+    background-color: #f2f2f2;
+}
+
+.lines {
+    line-height: 2;
+}
+
+
+/*----------------------*/
+/* header
+/*----------------------*/
+
+.site-title {
+    width: 260px;
+    position: fixed;
+    top: 38px;
+    left: 4vw;
+    z-index: 1;
+}
+
+.site-title.black svg path {
+    fill: #333;
+    transition: fill .3s;
+}
+
+.header-nav {
+    font-weight: bold;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 36.1vw;
+    text-align: center;
+    padding: 120px 0 0;
+    background-color: rgba(34, 34, 34, .95);
+    z-index: 2;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+
+.nav-item {
+    margin-bottom: 30px;
+}
+
+.nav-item:first-of-type {
+    margin-bottom: 40px;
+}
+
+.nav-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.header-nav a {
+    color: #fff;
+}
+
+
+/* ハンバーガーボタン（閉じている時）*/
+
+.burger-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 38px;
+    right: 4vw;
+    z-index: 3;
+}
+
+.bar {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+    border-radius: 1px;
+}
+
+.bar_top {
+    transform: translateY(-4px);
+    transition: transform .3s;
+}
+
+.bar_bottom {
+    transform: translateY(4px);
+    transition: transform .3s;
+}
+
+.menu {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* ハンバーガーボタン（開いている時） */
+
+.bar.cross.bar_top {
+    transform: translateY(2px)rotate(30deg);
+    transition: transform .3s;
+}
+
+.bar.cross.bar_mid {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.bar.cross.bar_bottom {
+    transform: translateY(-2px)rotate(-30deg);
+    transition: transform .3s;
+}
+
+/* ハンバーガーメニューが開いた時 */
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.header-nav.open {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform .3s, opacity .3s;
+}
+
+.burger-musk {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .5);
+    z-index: 1;
+}
+
+.burger-btn.black.bar {
+    background-color: #333;
+    transition: background-color .3s;
+}
+
+.burger-btn.black.menu {
+    color: #333;
+    transition: color .3s;
+}
+
+
+/*----------------------*/
+/* key visual
+/*----------------------*/
+
+.fv {
+    height: 100vh;
+}
+
+.fv::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.kv-wrapper {
+    height: 86.5%;
+    width: 76.4%;
+    background-image: url(../img/kv-img.jpg);
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+}
+
+.copy-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    color: #fff;
+}
+
+.copy_jp {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+.copy_company {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-copy {
+    font-size: 7.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*----------------------*/
+/* section_about
+/*----------------------*/
+
+.section-wrapper:first-of-type {
+    padding-top: 120px;
+    position: relative;
+}
+
+.section-wrapper:first-of-type::after {
+    content: "";
+    width: 100vw;
+    height: 160px;
+    display: block;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.about-bg {
+    background-image: url(./img/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 110px 0 110px 50px;
+}
+
+.about-content {
+    max-width: 590px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .95);
+}
+
+/*-----------------------*/
+/*section_works
+/*-----------------------*/
+
+.l-section-wrapper {
+    padding: 60px 0;
+}
+
+.l-content-wrapper {
+    max-width: 1100px;
+    padding: 0 30px; 
+    margin: 0 auto;
+}
+
+.s-section-wrapper {
+    width: 47.3%;
+}
+
+.section-img-wrapper {
+    margin-bottom: 30px;
+}
+
+/*---------------------------*/
+/*section_topics
+/*---------------------------*/
+
+.topics-list {
+    max-width: 700px;
+}
+
+.topics-item {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.topics-date {
+    color: #cecece;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.topics-title {
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/*-----------------------------*/
+/*section_contact
+/*-----------------------------*/
+
+.section-wrapper:last-of-type {
+    padding-bottom: 120px;
+}
+
+.contact-content {
+    width: 40%;
+}
+
+.contact-img-wrapper {
+    width: 52.7%;
+}
+
+/*------------------------------*/
+/*footer
+/*------------------------------*/
+
+.footer {
+    line-height: 50px;
+    background-color: #525252;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* SP */
+@media screen and (max-width: 768px) {
+    /*----------------*/
+    /*base
+    /*----------------*/
+    body {
+        font-size: 1.4rem;
+    }
+
+    .section-wrapper {
+        padding: 40px 0;
+    }
+
+    /*--------------------*/
+    /*header_sp
+    /*--------------------*/
+
+    .site-title {
+        width: 180px;
+        top: 21px;
+    }
+
+    .burger-btn {
+        top: 28px;
+    }
+    
+    .header-nav {
+        width: 67.7vw;
+    }
+
+    /*-----------------------*/
+    /*fv_sp
+    /*-----------------------*/
+
+    .copy-wrapper {
+        right: -15%;
+        transform: translate(0, -50%);
+    }
+
+    .copy_jp {
+        font-size: 1.6rem;
+    }
+
+    .copy_company {
+        font-size: 1.6rem;
+    }
+
+    .main-copy {
+        font-size: 5.4rem;
+    }
+
+    /*---------------------------*/
+    /*section_about_sp
+    /*---------------------------*/
+
+    .section-wrapper:first-of-type {
+        padding: 80px 0 4vw;
+    }
+
+    .content-wrapper .about-bg {
+        padding: 50px 4vw
+    }
+
+    .about-content {
+        margin: 0 auto;
+    }
+
+    /*---------------------------*/
+    /*section_works_sp
+    /*---------------------------*/
+
+    .l-section-wrapper {
+        padding: 40px 0;
+    }
+
+    .l-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 4vw;
+    }
+
+    .s-section-wrapper {
+        width: 520px;
+        max-width: 100%;
+    }
+
+    .s-section-wrapper:first-of-type {
+        margin-bottom: 80px;
+    }
+
+    /*---------------------------*/
+    /*section_topics_sp
+    /*---------------------------*/
+
+    .topics-title {
+        font-size: 1.2rem;
+    }
+
+    .topics-item {
+        margin-bottom: 20px;
+    }
+
+    .ml-auto {
+        margin-left: 0;
+    }
+
+    /*---------------------------*/
+    /*section_contact_sp
+    /*---------------------------*/
+
+    .content-wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 0 4vw;
+    }
+
+    .contact-content {
+        width: 440px;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-img-wrapper {
+        width: 520px;
+        max-width: 100%;
+    }
+
+    .section-wrapper:last-of-type {
+        padding-bottom: 80px;
+    }
+}
