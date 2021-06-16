@@ -1,0 +1,238 @@
+/*---------------------*/
+/* base_pc
+/*---------------------*/
+html {
+    font-size: 62.5%;
+    /* font-family: 'Bebas Neue', cursive; */
+    /* scroll-behavior: smooth; */
+}
+
+.cs-title {
+    margin: 100px 0 80px;
+    font-weight: bold;
+}
+
+.fas {
+    margin-left: 1%;
+}
+/*---------------------*/
+/* header
+/*---------------------*/
+
+.header-contents {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 1%;
+    padding-top: 20px;
+    width: 90%;
+    position: fixed;
+    border-bottom: 1px solid #333;
+    box-shadow: 0 0 5px 0;
+    z-index: 10;
+}
+
+.header-title_txt {
+    font-size: 4rem;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    padding: 0 20px;
+}
+
+.header-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-item_title {
+    font-size: 3rem;
+}
+
+.header-item_ja {
+    text-align: center;
+}
+/*---------------------*/
+/* main
+/*---------------------*/
+.c-title {
+    font-size: 4rem;
+}
+/*---------------------*/
+/* profile
+/*---------------------*/
+.profile-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-txt p {
+    font-size: 1.6rem;
+}
+
+.profile-txt p {
+    color: #333;
+}
+/*---------------------*/
+/* works
+/*---------------------*/
+
+.works-results_list {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.works-results_item {
+    width: 44%;
+    margin: 2% 3%;
+}
+
+.works-img {
+    width: 100%;
+    border: 1px solid #333;
+    transition: all .4s;
+}
+
+.works-img:hover {
+    opacity: 0.5;
+}
+
+.works-title_txt {
+    text-align: center;
+}
+/*---------------------*/
+/* skil
+/*---------------------*/
+.skils-title_txt {
+    text-align: center;
+}
+
+.skils-about {
+    display: flex;
+    justify-content: center;
+}
+
+.skils-about .fas {
+    font-size: 6rem;
+    margin: 10% 0;
+}
+
+.skils-item{
+    width: 25%;
+    margin: 0 5%;
+    text-align: center;
+    background-color: #eee;
+    padding: 100px 25px;
+    border-radius: 20px;
+}
+
+.skils-title {
+    font-size: 2.6rem;
+}
+
+.coding-about_txt {
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+
+/*------------------------*/
+/* footer
+/*------------------------*/
+footer {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+  }
+  
+  .footer-wrapper {
+    display: inline-flex;
+    margin: 60px 0 60px;
+  }
+
+  .contact-txt p {
+      font-size: 1.6rem;
+  }
+  
+  .footer-wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer-wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .footer-wrapper .icon:hover span,
+  .footer-wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .footer-wrapper .twitter:hover,
+  .footer-wrapper .twitter:hover .tooltip,
+  .footer-wrapper .twitter:hover a, 
+  .footer-wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  
+  .footer-wrapper .github:hover,
+  .footer-wrapper .github:hover .tooltip,
+  .footer-wrapper .github:hover a,
+  .footer-wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  

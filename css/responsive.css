@@ -1,0 +1,77 @@
+@media screen and (max-width:1000px) {
+    /*-------------------*/
+    /* header
+    /*-------------------*/
+    .header-contents {
+        flex-direction: column;
+    }
+
+    .header-title_txt {
+        text-align: center;
+    }
+
+    .header-list {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .header-item_title {
+        font-size: 2rem;
+    }
+
+    /*-----------------------*/
+    /* profile
+    /*-----------------------*/
+    .profile-wrapper {
+        margin: 0 10px;
+    }
+    /*-----------------------*/
+    /* works
+    /*-----------------------*/
+    .works-results_item {
+        width: 100%;
+    }
+
+    /*-----------------------*/
+    /* skils
+    /*-----------------------*/
+    .skils-item {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    /*------------------------*/
+    /* header
+    /*------------------------*/
+    /* .header-item_title {
+        font-size: 1.2rem;
+    }
+
+    .header-item_ja {
+        display: none;
+    }
+
+    .header-item {
+        padding: 0 12px;
+    } */
+    /*------------------------*/
+    /* skils
+    /*------------------------*/
+    .skils-about {
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .skils-item {
+        margin: 3% auto;
+        padding: 100px 0;
+    }
+
+    .responsive-about_txt,
+    .coding-about_txt {
+        font-size: 1.2rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
