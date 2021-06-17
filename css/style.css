@@ -139,7 +139,8 @@ html {
     font-size: 2.6rem;
 }
 
-.coding-about_txt {
+.coding-about_txt,
+.responsive-about_txt {
     margin-top: 30px;
     font-size: 1.6rem;
 }
@@ -228,6 +229,14 @@ footer {
     color: #ffffff;
   }
   
+  .footer-wrapper .instagram:hover,
+  .footer-wrapper .instagram:hover .tooltip,
+  .footer-wrapper .instagram:hover a,
+  .footer-wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+
   .footer-wrapper .github:hover,
   .footer-wrapper .github:hover .tooltip,
   .footer-wrapper .github:hover a,
