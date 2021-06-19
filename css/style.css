@@ -1,8 +1,13 @@
+.anchor {
+    padding-top: 70px;
+    margin-top: -70px;
+}
 /*---------------------*/
 /* base_pc
 /*---------------------*/
 html {
     font-size: 62.5%;
+    /* font-family: 'Bebas Neue', cursive; */
     scroll-behavior: smooth;
 }
 
