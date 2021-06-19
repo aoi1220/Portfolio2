@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
 </head>
 <body>
     <header class="header-wrapper">
@@ -26,7 +27,7 @@
                         </a>
                     </li>
                     <li class="header-item">
-                        <a href="#section3" id="link_section3" onclick="ScrollWindow('section3');">
+                        <a href="#section3" id="link_section3"onclick="ScrollWindow('section3');">
                             <h3 class="header-item_title">Works</h3>
                             <h3 class="header-item_ja">制作物</h3>
                         </a>
@@ -62,7 +63,7 @@
             </div>
             <!-- //profile -->
             <!-- works -->
-            <div class="works-wrapper" id="section3">
+            <div class="works-wrapper anchor" id="section3">
                 <div class="works-contents">
                     <div class="works-title cs-title">
                         <h1 class="works-title_txt c-title">Works<i class="fas fa-briefcase"></i></h1>
@@ -87,7 +88,7 @@
             </div>
             <!-- //works -->
             <!-- skil -->
-            <div class="skils-wrapper" id="section4">
+            <div class="skils-wrapper anchor" id="section4">
                 <div class="skils-contents">
                     <div class="skils-title cs-title">
                         <h1 class="skils-title_txt c-title">Skils<i class="fas fa-desktop"></i></h1>
@@ -114,7 +115,7 @@
             <!-- //skil -->
         </div>
     </main>
-    <footer id="section5">
+    <footer id="section5" class="anchor">
         <!-- contact -->
         <div class="contact-title cs-title">
             <h1 class="contact-title_txt c-title">Contact</h1>
@@ -144,6 +145,9 @@
         </div>
         <!-- //contact -->
         </footer>
+        <div class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3" >bounceInDown</div>
+        <div class="wow bounceIn">bounceIn</div>
         <script src="script.js"></script>
+        <script src="WOW-master/dist/wow.min.js"></script>
 </body>
 </html>
