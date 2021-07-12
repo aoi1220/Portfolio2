@@ -80,14 +80,11 @@ html {
 .profile-txt p {
     font-size: 1.6rem;
     margin-bottom: 5px;
-}
-
-.profile-txt p:(:last-of-type){
-    margin-bottom: 0;
-}
-
-.profile-txt p {
     color: #333;
+}
+
+.profile-txt p:last-of-type {
+    margin-bottom: 0px;
 }
 /*---------------------*/
 /* works
@@ -117,6 +114,17 @@ html {
 
 .works-title_txt {
     text-align: center;
+}
+
+.fadeIn_up {
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2s;
+}
+
+.fadeIn_up.is-show {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 /*---------------------*/
 /* skil
