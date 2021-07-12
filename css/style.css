@@ -116,16 +116,7 @@ html {
     text-align: center;
 }
 
-.fadeIn_up {
-    opacity: 0;
-    transform: translate(0, 50%);
-    transition: 2s;
-}
 
-.fadeIn_up.is-show {
-    transform: translate(0, 0);
-    opacity: 1;
-}
 /*---------------------*/
 /* skil
 /*---------------------*/
