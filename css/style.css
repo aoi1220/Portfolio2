@@ -79,6 +79,11 @@ html {
 
 .profile-txt p {
     font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.profile-txt p:(:last-of-type){
+    margin-bottom: 0;
 }
 
 .profile-txt p {
