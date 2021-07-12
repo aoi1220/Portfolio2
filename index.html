@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
 </head>
 <body>
     <header class="header-wrapper">
@@ -56,8 +57,8 @@
                         <h1 class="profile-title_txt c-title">Profile<i class="fas fa-user-circle"></i></h1>
                     </div>
                     <div class="profile-txt">
-                        <p>19歳大学生の西口と言います。<br></p>
-                        <p>使用言語：[HTML/CSS/jQuery/PHP]<br></p>
+                        <p>19歳大学生の西口と言います<br></p>
+                        <p>使用言語：[ HTML / CSS / jQuery / PHP ]<br></p>
                         <p>これらを使用してWebサイトの作成、修正を行います。<br></p>
                         <p>お任せいただいた案件は誠心誠意、全力で取り組んでいただきたいと思います。</p>
                     </div>
@@ -73,16 +74,16 @@
                     <div class="works-results">
                         <ul class="works-results_list">
                             <li class="works-results_item">
-                                <a href="./coding1/index.html"><img class="works-img" src="img/works-img1.png" alt=""></a>
+                                <a class="inview" href="./coding1/index.html"><img class="works-img fadeIn_up" src="img/works-img1.png" alt=""></a>
                             </li>
                             <li class="works-results_item">
-                                <a href="./coding2/index.html"><img class="works-img" src="img/works-img2.png" alt=""></a>
+                                <a class="inview" href="./coding2/index.html"><img class="works-img fadeIn_up" src="img/works-img2.png" alt=""></a>
                             </li>
                             <li class="works-results_item">
-                                <a href="./coding3/index.html"><img class="works-img" src="img/works-img3.png" alt=""></a>
+                                <a class="inview" href="./coding3/index.html"><img class="works-img fadeIn_up" src="img/works-img3.png" alt=""></a>
                             </li>
                             <li class="works-results_item">
-                                <a href="./coding4/index.html"><img class="works-img" src="img/works-img4.png" alt=""></a>
+                                <a class="inview" href="./coding4/index.html"><img class="works-img fadeIn_up" src="img/works-img4.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -104,10 +105,10 @@
                             </div>
                         </div>
                         <div class="skils-responsive skils-item">
-                            <h2 class="skils-title">WordPress化、導入</h2>
+                            <h2 class="skils-title">レスポンシブ対応</h2>
                             <i class="fas fa-mobile-alt"></i>
                             <div class="coding-about">
-                                <p class="responsive-about_txt">HTMLサイトをWordPress化にしたり、WordPressでサイトを作成、修正を行っています。</p>
+                                <p class="responsive-about_txt">PC、タブレット、スマホ全ての端末で見やすいように心がけて作成します。</p>
                             </div>
 
                         </div>
@@ -126,7 +127,7 @@
             <p>何かございましたら、お気軽に下記のSNSにご連絡ください。</p>
         </div>
         <div class="footer-wrapper">
-            <a href="https://twitter.com/Ain_19o">
+            <a href="https://twitter.com/aoi122010">
                 <div class="icon twitter">
                   <div class="tooltip">Twitter</div>
                     <span><i class="fab fa-twitter"></i></span>
@@ -147,6 +148,11 @@
         </div>
         <!-- //contact -->
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
         <script src="script.js"></script>
 </body>
 </html>
