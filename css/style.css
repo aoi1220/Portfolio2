@@ -109,11 +109,35 @@ html {
 }
 
 .works-img:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .works-title_txt {
     text-align: center;
+}
+
+.fade-in-box {
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in-box.is-show {
+    opacity: 1;
+    transition: 1s;
+    margin-top: 0;
+}
+
+.fade-in-box2 {
+    margin-top: 100px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fade-in-box2.is-show {
+    opacity: 1;
+    transition: 1s;
+    margin-top: 0;
 }
 
 
