@@ -1,9 +1,15 @@
-"use strict"
-{
-    function ScrollWindow(elem) {
-        var element = document.getElementById(elem);
-        var rect = element.getBoundingClientRect();
-        var elemtop = rect.top + window.pageYOffset;
-        document.documentElement.scrollTop = elemtop;
-      }
-}
+$(function (){
+    $(window).on("scroll", function(){
+      const trigger = $('.js-trigger');
+      
+      $(trigger).each(function(){
+        let scroll = $(window).scrollTop();
+        let windowHeight = $(window).height();
+        let triggerTop = $(this).offset().top;
+  
+        if(scroll > triggerTop - windowHeight / 1){
+           $(this).addClass("is-show");
+        };
+    })
+  })
+  });
