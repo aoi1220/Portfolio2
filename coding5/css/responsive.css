@@ -1,0 +1,117 @@
+@media screen and (max-width:900px) {
+    .header-inner {
+        padding-left: 20px;
+    }
+    /*--------------------------------------*/
+    /* fv
+    /*--------------------------------------*/
+    .fv-textarea {
+        margin-left: 30px;
+        margin-top: 70%;
+    }
+    #photo img {
+        width: 100%;
+    }
+    /*--------------------------------------*/
+    /* reasion
+    /*--------------------------------------*/
+    .reasion-inner {
+        margin-top: 0;
+    }
+    /*--------------------------------------*/
+    /* reasion
+    /*--------------------------------------*/
+    .reasion-about {
+        height: 500px
+    }
+    .reasion-about1 {
+        margin-top: 50px;
+    }
+    .reasion-about2 {
+        top: 56%;
+    }
+    .reasion-about2 .fas {
+        margin-right: 20px;
+    }
+    .reasion-about1 {
+        margin-right: 20px;
+    }
+    .reasion-about2 {
+        margin-left: 20px;
+    }
+    .reasion-about1,
+    .reasion-about2 {
+        padding: 8%;
+    }
+
+    /*--------------------------------------*/
+    /* voice
+    /*--------------------------------------*/
+    .voice-inner {
+        margin: 0 16px;
+    }
+    .voice-about-inner {
+        flex-direction: column-reverse;
+    }
+    .voice-about {
+        margin-bottom: 10px;
+    }
+    .person-voice {
+        margin: 0 auto;
+    }
+    .person-voice-1::before, 
+    .person-voice-3::before {
+        left: 48%;
+        top: 109px;
+    }
+    .person-voice-2::before {
+        right: 48%;
+        top: 109px;
+    }
+    .voice-1 .person,
+    .voice-3 .person {
+      margin: 30px auto;
+    }
+    .voice-2 .person {
+        margin: 30px auto;
+    }
+
+    /*--------------------------------------*/
+    /* school
+    /*--------------------------------------*/
+    .school-about ul {
+        margin-left: auto;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .school-about ul li:nth-of-type(odd) {
+        margin-right: 0;
+    }
+
+    /*--------------------------------------*/
+    /* contact
+    /*--------------------------------------*/
+    .contact-inner {
+        margin: 0 10px;
+    }
+    .contact-text {
+        line-height: 1.6;
+    }
+
+    /*--------------------------------------*/
+    /* footer
+    /*--------------------------------------*/
+    .footer-list {
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+    .footer-list ul:nth-of-type(1),
+    .footer-list ul:nth-of-type(2) {
+        margin-bottom: 30px;
+    }
+    .f-list {
+        width: 40%;
+        /* text-align: center; */
+    }
+}
