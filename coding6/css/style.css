@@ -1,0 +1,490 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html .overall {
+  display: flex;
+  /*-------------------------------------*/
+  /* main
+        /*-------------------------------------*/
+  /*-------------------------------------*/
+  /* contact-section
+        /*-------------------------------------*/
+}
+
+html .overall .sidebar {
+  width: 30%;
+  padding: 2%;
+  height: 100vh;
+}
+
+html .overall .sidebar .site-logo {
+  z-index: 1001;
+}
+
+html .overall .sidebar .site-logo {
+  margin-bottom: 30px;
+}
+
+html .overall .sidebar .site-logo img {
+  width: 200px;
+}
+
+html .overall .sidebar ul li {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+html .overall .sidebar ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+html .overall .sidebar .company-list {
+  margin-bottom: 50px;
+}
+
+html .overall .sidebar .btn-trigger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+html .overall .sidebar .btn-trigger span {
+  position: absolute;
+  content: '';
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  right: 30px;
+  display: block;
+}
+
+html .overall .sidebar .btn-trigger span:nth-of-type(1) {
+  top: 30px;
+}
+
+html .overall .sidebar .btn-trigger span:nth-of-type(2) {
+  top: 38px;
+}
+
+html .overall .sidebar .btn-trigger span:nth-of-type(3) {
+  top: 46px;
+}
+
+html .overall main {
+  /* video */
+  /*-------------------------------------*/
+  /* section-base
+            /*-------------------------------------*/
+  /*-------------------------------------*/
+  /* intro-section
+            /*-------------------------------------*/
+  /*-------------------------------------*/
+  /* feature-section
+            /*-------------------------------------*/
+  /*-------------------------------------*/
+  /* flow-section
+            /*-------------------------------------*/
+}
+
+html .overall main #video {
+  width: 100%;
+}
+
+html .overall main .gradation {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(#DEDEDE, #000000);
+  padding: 0 0 200px;
+  color: #fff;
+}
+
+html .overall main .section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html .overall main .intro-title:before,
+html .overall main .feature-title:before {
+  content: '';
+  width: 28%;
+  border-top: 1px solid #fff;
+}
+
+html .overall main .intro-title::after,
+html .overall main .feature-title::after {
+  content: '';
+  width: 28%;
+  border-top: 1px solid #fff;
+}
+
+html .overall main .flow-title:before,
+html .overall main .contact-title:before {
+  content: '';
+  width: 28%;
+  border-top: 1px solid #333;
+}
+
+html .overall main .flow-title::after,
+html .overall main .contact-title::after {
+  content: '';
+  width: 28%;
+  border-top: 1px solid #333;
+}
+
+html .overall main .intro-title::before {
+  background-color: #fff;
+}
+
+html .overall main .intro-title::after {
+  background-color: #fff;
+}
+
+html .overall main .intro-list {
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  gap: 20px 3%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+html .overall main .intro-list li {
+  width: 44%;
+}
+
+html .overall main .intro-list li img {
+  width: 100%;
+}
+
+html .overall main .feature-title::before {
+  background-color: #fff;
+}
+
+html .overall main .feature-title::after {
+  background-color: #fff;
+}
+
+html .overall main .feature-list {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+html .overall main .feature-list li {
+  text-align: center;
+  width: 30%;
+}
+
+html .overall main .feature-list li .circle {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: calc(50% - 11px) 0;
+}
+
+html .overall main .feature-list li .circle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+html .overall main .feature-list li .circle:hover::before {
+  left: 0;
+}
+
+html .overall main .feature-list li h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+html .overall main .feature-list li p {
+  margin-top: 5px;
+  font-size: 1.4rem;
+}
+
+html .overall main .feature-list li:first-of-type {
+  margin-left: 10px;
+}
+
+html .overall main .feature-list li:last-of-type {
+  margin-right: 10px;
+}
+
+html .overall main .section-first-text {
+  font-size: 1.6rem;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+html .overall main .flow-section {
+  font-weight: bold;
+}
+
+html .overall main .flow-section .flow-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+html .overall main .flow-section .flow-list .flow-left-list {
+  position: relative;
+  font-size: 1.4rem;
+}
+
+html .overall main .flow-section .flow-list .flow-left-list li {
+  background-color: #414141;
+  color: #fff;
+  padding: 30px 60px;
+  margin-bottom: 60px;
+  position: relative;
+  text-align: center;
+  width: 82px;
+}
+
+html .overall main .flow-section .flow-list .flow-left-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+html .overall main .flow-section .flow-list .flow-left-list li::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 19px;
+  height: 0;
+  border-top: 30px solid #414141;
+  /* 好みで高さ色を変えてください */
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+}
+
+html .overall main .flow-section .flow-list .flow-left-list::before {
+  content: '';
+  position: absolute;
+  background-color: #FFDD00;
+  width: 50px;
+  height: 100%;
+  left: 37%;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list {
+  counter-reset: number;
+  /*数字をリセット*/
+  list-style-type: none !important;
+  /*数字を一旦消す*/
+  padding: 0.5em;
+  width: 80%;
+  margin-left: 50px;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5em;
+  padding: 0.5em 0.5em 0.5em 30px;
+  margin-bottom: 40px;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list li .right-title {
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list li p {
+  font-size: 1.6rem;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+html .overall main .flow-section .flow-list .flow-right-list li::before {
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*以下数字のデザイン変える*/
+  display: inline-block;
+  background: #414141;
+  color: white;
+  font-family: 'Avenir','Arial Black','Arial',sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: -8px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  /*以下 上下中央寄せのため*/
+  top: 16%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html .overall .contact-section {
+  margin-bottom: 140px;
+}
+
+html .overall .contact-section .section-first-text {
+  max-width: 900px;
+}
+
+html .overall .contact-section .contact-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+html .overall .contact-section .contact-list a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 60px 2px;
+  width: 30%;
+  border: 1px solid black;
+  transition: all .3s;
+  position: relative;
+}
+
+html .overall .contact-section .contact-list a:hover {
+  border: 3px solid black;
+  padding: 58px 0;
+}
+
+html .overall .contact-section .contact-list a:first-of-type {
+  margin-left: 10px;
+}
+
+html .overall .contact-section .contact-list a:last-of-type {
+  margin-right: 10px;
+}
+
+html .overall .contact-section .contact-list li {
+  width: 100%;
+  margin: 0 auto;
+}
+
+html .overall .contact-section .contact-list li img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+html .overall .contact-section .contact-list li h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+html .overall .contact-section .contact-list a::after {
+  position: absolute;
+  content: '';
+  border-top: 13px solid black;
+  /* 好みで高さ色を変えてください */
+  border-left: 12px solid transparent;
+  border-right: 14px solid transparent;
+  bottom: 1px;
+  right: -6px;
+  transform: rotate(-47deg);
+}
+
+html .overall footer {
+  background-color: black;
+  color: #fff;
+  padding: 40px 50px 20px;
+}
+
+html .overall footer .footer-list {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+html .overall footer .footer-list li {
+  font-size: 1.4rem;
+  border-right: 1px solid #fff;
+  padding-right: 20px;
+}
+
+html .overall footer .footer-list li:last-of-type {
+  border: none;
+}
+
+html .overall footer .copyright {
+  text-align: center;
+  margin-top: 50px;
+}
+
+html .overall .is-black {
+  border: 1px solid #fff;
+}
+
+html .overall .is-black::after {
+  border-top: 8px solid #fff;
+}
+
+html .overall .top-return {
+  position: fixed;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 26px;
+  transition: all .5s;
+  z-index: 10000;
+}
+
+html .overall .top-return::after {
+  content: '';
+  position: absolute;
+  border-left: 7px solid transparent;
+  border-right: 9px solid transparent;
+  transform: rotate(180deg);
+  right: 18px;
+  top: 22px;
+}
+
+html .overall .is-show {
+  opacity: 0;
+}
+
+html .overall .is-white {
+  border: 1px solid black;
+}
+
+html .overall .is-white::after {
+  border-top: 8px solid black;
+}

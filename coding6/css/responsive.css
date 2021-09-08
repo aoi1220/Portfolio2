@@ -1,0 +1,155 @@
+@media screen and (max-width: 960px) {
+  html body.scroll-lock {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  html .overall {
+    display: block;
+  }
+  html .overall .sidebar {
+    height: 80px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*-------------------------------------*/
+    /* hamburger-menu
+                /*-------------------------------------*/
+  }
+  html .overall .sidebar .site-logo {
+    margin-top: 10px;
+  }
+  html .overall .sidebar .btn-trigger {
+    display: block;
+    z-index: 1001;
+  }
+  html .overall .sidebar .btn-trigger span {
+    transition: all .4s;
+  }
+  html .overall .sidebar .hamburger-menu {
+    position: absolute;
+    height: 100vh;
+    transition: all .3s;
+    background-color: #eee;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+  }
+  html .overall .sidebar .open {
+    opacity: 0;
+    z-index: -1000;
+  }
+  html .overall .sidebar .close1 {
+    transform: rotate(45deg);
+    margin-top: 10px;
+  }
+  html .overall .sidebar .close2 {
+    opacity: 0;
+  }
+  html .overall .sidebar .close3 {
+    margin-top: -6px;
+    transform: rotate(-45deg);
+  }
+  html .overall main {
+    /*-------------------------------------*/
+    /* contact-section
+            /*-------------------------------------*/
+    /*-------------------------------------*/
+    /* flow-section
+            /*-------------------------------------*/
+    /*-------------------------------------*/
+    /* footer-section
+            /*-------------------------------------*/
+  }
+  html .overall main .section-first-text {
+    text-align: center;
+  }
+  html .overall main .section-title {
+    font-size: 2rem;
+  }
+  html .overall main .section-title:after {
+    width: 16%;
+    right: 50px;
+  }
+  html .overall main .section-title:before {
+    width: 16%;
+    left: 50px;
+  }
+  html .overall main .gradation {
+    padding-top: 0;
+    /*-------------------------------------*/
+    /* feature-section
+                    /*-------------------------------------*/
+  }
+  html .overall main .gradation .intro-section .intro-list {
+    flex-direction: column;
+  }
+  html .overall main .gradation .intro-section .intro-list li {
+    width: 90%;
+  }
+  html .overall main .gradation .feature-list {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  html .overall main .gradation .feature-list li:first-of-type {
+    margin-left: 10px;
+  }
+  html .overall main .gradation .feature-list li:last-of-type {
+    margin-right: 10px;
+  }
+  html .overall main .contact-section .contact-list {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  html .overall main .contact-section .contact-list a {
+    width: 205px;
+    padding: 60px 16%;
+  }
+  html .overall main .contact-section .contact-list a:hover {
+    padding: 58px 16%;
+  }
+  html .overall main .contact-section .contact-list a:first-of-type {
+    margin-left: 0;
+  }
+  html .overall main .contact-section .contact-list a:last-of-type {
+    margin-right: 0;
+  }
+  html .overall main .flow-section .flow-list {
+    flex-direction: column;
+  }
+  html .overall main .flow-section .flow-list .flow-left-list {
+    width: 90%;
+    margin: 0 auto 90px;
+    justify-content: center;
+    align-items: center;
+  }
+  html .overall main .flow-section .flow-list .flow-left-list li {
+    width: calc(100vw - 80px);
+    margin: 0 auto 60px;
+    padding: 30px 0;
+  }
+  html .overall main .flow-section .flow-list .flow-left-list li::before {
+    border-left: calc(50vw - 50px) solid transparent;
+    border-right: calc(50vw - 50px) solid transparent;
+  }
+  html .overall main .flow-section .flow-list .flow-left-list::before {
+    left: 47%;
+  }
+  html .overall main footer .footer-list {
+    justify-content: start;
+    gap: 10px;
+  }
+  html .overall main footer .footer-list li {
+    padding-left: 20px;
+  }
+  html .overall main footer .footer-list li:first-of-type {
+    padding-left: 0;
+  }
+}
