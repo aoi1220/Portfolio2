@@ -25,6 +25,12 @@
     .profile-wrapper {
         margin: 0 10px;
     }
+    .profile-txt p　{
+        margin-bottom: 10px;
+    }
+    .profile-text p:last-of-type {
+        margin-bottom: 0;
+    }
     /*-----------------------*/
     /* works
     /*-----------------------*/
