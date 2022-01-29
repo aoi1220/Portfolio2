@@ -251,6 +251,14 @@ footer {
   .footer-wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
   }
+
+  .footer-wrapper .mailadress:hover,
+  .footer-wrapper .mailadress:hover .tooltip,
+  .footer-wrapper .mailadress:hover a, 
+  .footer-wrapper .mailadress:hover .tooltip::before {
+    background-color: #1E75EB;
+    color: #ffffff;
+  }
   
   
   .footer-wrapper .twitter:hover,
